@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #0f0f0f;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hamburger-menu {
+    display: none; /* Display for mobile */
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #0f0f0f;
+    padding: 150px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #8dd2f6;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #1a8cff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: #4a4a4a;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #8dd2f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section.content {
+    padding: 60px 0;
+    color: #e0e0e0;
+}
+
+section.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8dd2f6;
+}
+
+section.content p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #fff;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    background-color: #1a8cff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-links.open {
+        display: block;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
